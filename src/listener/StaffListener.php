@@ -10,6 +10,7 @@ use pocketmine\block\VanillaBlocks;
 use pocketmine\event\block\BlockBreakEvent;
 use pocketmine\event\block\BlockPlaceEvent;
 use pocketmine\event\entity\EntityDamageByEntityEvent;
+use pocketmine\event\entity\EntityItemPickupEvent;
 use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerChatEvent;
 use pocketmine\event\player\PlayerDropItemEvent;
@@ -216,6 +217,17 @@ class StaffListener implements Listener
 
                 $player->teleport($players[array_rand($players)]->getPosition()->asVector3());
                 $player->sendMessage("Teleported.");
+            }
+        }
+    }
+
+    public function onItemPickup(EntityItemPickupEvent $ev){
+        $entity = $ev->getEntity();
+        if ($entity instanceof Player){
+            $session = SessionManager::get($entity);
+
+            if ($session->staffmode){
+                $ev->cancel();
             }
         }
     }
