@@ -1,0 +1,11 @@
+---
+name: StaffCore
+version: 0.0.1
+main: ilai\StaffCore\Main
+src-namespace-prefix: ilai\StaffCore
+api: 5.27.1
+permissions:
+  staffcore.staff:
+    description: Enables staff-related things.
+    default: op
+...

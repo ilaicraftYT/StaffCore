@@ -1,0 +1,7 @@
+{
+    "name": "ilai/staff-core",
+    "require": {
+        "pocketmine/pocketmine-mp": "^5.27",
+        "sof3/libasynql": "^4.2"
+    }
+}
