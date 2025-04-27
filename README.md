@@ -3,7 +3,7 @@ A staff utilities plugin for PocketMine-MP.
 
 This is a plugin I recently coded based on another one I made around ~2019. 
 
-It's originally planned for [Star Network](); but since its release needs to come a long way still, I have decided to release this for it to be useful to someone.
+It's originally planned for [Star Network](https://discord.gg/sXbsVSnsST); but since its release needs to come a long way still, I have decided to release this for it to be useful to someone.
 Please note that the plugin is **hardcoded** a *lot* for the reason mentioned above. I might give you support if you customize and use this thing. **I don't have any plans to post this on poggit.**
 
 ## Features
