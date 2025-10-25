@@ -1,7 +1,11 @@
 {
     "name": "ilai/staff-core",
-    "require": {
-        "pocketmine/pocketmine-mp": "^5.27",
-        "sof3/libasynql": "^4.2"
+    "require-dev": {
+        "pocketmine/pocketmine-mp": "^5.27"
+    },
+    "autoload": {
+        "psr-0": {
+            "ilai\\StaffCore\\": "src"
+        }
     }
 }
